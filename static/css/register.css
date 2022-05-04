@@ -1,0 +1,140 @@
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(171deg, rgba(27, 35, 39, 0.7) 0%, rgba(35, 36, 51, 0.9) 100%), url(/img/bg-space.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.register-box {
+    height: 450px;
+    width: 660px;
+    display: flex;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, .2);
+}
+@keyframes move {
+    0%  {background-position: 0%;}
+    100% {background-position: 100%;}
+}
+
+.left-side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background: linear-gradient(171deg, rgba(27, 35, 39, 0.3) 0%, rgba(27, 35, 39, 0.4) 100%), url(/img/bg-space.png);
+    background-size: cover;
+    background-color: rgb(54, 35, 50);
+    animation-name: move;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+
+
+
+.left-side h2, .left-side p{
+    color: #fff !important;
+    padding: 20px;
+}
+
+.right-side {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+}
+
+.right-side h1, .left-side p {
+    color: #000;
+    padding: 20px;
+}
+
+.data-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    height: 23px;
+    outline: none;
+    border-width: 0 0 1px 0;
+    border-color: #121212;
+    transform: border-width .4s ease-in-out;
+}
+
+input:focus {
+    border-width: 0 0 2px 0;
+}
+
+.label-focus {
+    width: 50px;
+    padding-right: 150px;
+    font-size: .76em;
+    transition:  ease-out .2s;
+}
+
+.username-input {
+    margin-bottom: 15px;
+}
+
+.email-input {
+    margin-bottom: 15px;
+}
+
+
+
+.password-input {
+    margin: 5px 0;
+    color: #1b1b1b;
+}
+
+.btn {
+    cursor: pointer;
+    margin: 35px 0;
+    background: linear-gradient(171deg, rgba(18, 18, 18, 1) 0%, rgba(18, 18, 18, 1) 100%), url(/img/bg-space.png) no-repeat;
+
+    color: #fff;
+    height: 30px;
+    width: 130px;
+    padding: 23px 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: 1px solid #121212;
+    transition: box-shadow .2s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, .3);
+}
+
+.btn:focus {
+    background: linear-gradient(171deg, rgba(27, 35, 39, 0.3) 0%, rgba(27, 35, 39, 0.4) 100%), url(/img/bg-space.png) no-repeat;
+    background-position: center;
+    background-size: 180%;
+    transition: background .2s ease-in-out;
+    border: none;
+}
+
+.account-already a {
+    color: #121212;
+    font-size: .8em;
+}
